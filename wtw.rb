@@ -5,13 +5,13 @@
 class Wtw < Formula
   desc "TUI tool for managing git worktrees"
   homepage "https://github.com/krystxf/worktree-workflow"
-  version "0.2.4-alpha"
+  version "0.2.5-alpha"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/krystxf/worktree-workflow/releases/download/v0.2.4-alpha/worktree-workflow_darwin_arm64.tar.gz"
-      sha256 "9340d78bb86f65654c8b3ec43bf6a1ce01ef8df8fef0db5cbcca9a4f42c29712"
+      url "https://github.com/krystxf/worktree-workflow/releases/download/v0.2.5-alpha/worktree-workflow_darwin_arm64.tar.gz"
+      sha256 "910d0af0c7376a0b9c89fc2356a61a5dc3d4ed3e5c4887df403e52408f3ebf1d"
 
       define_method(:install) do
         bin.install "wtw"
@@ -21,15 +21,15 @@ class Wtw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/krystxf/worktree-workflow/releases/download/v0.2.4-alpha/worktree-workflow_linux_amd64.tar.gz"
-      sha256 "33ec70868c2c02a2e41c496166d6a46aedf6e49871e99c2f0cd3106091d3b06e"
+      url "https://github.com/krystxf/worktree-workflow/releases/download/v0.2.5-alpha/worktree-workflow_linux_amd64.tar.gz"
+      sha256 "f58072fb39e138f585e2b17c86db28e6440b67466b533e72101c7bd42b620a45"
       define_method(:install) do
         bin.install "wtw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/krystxf/worktree-workflow/releases/download/v0.2.4-alpha/worktree-workflow_linux_arm64.tar.gz"
-      sha256 "f2ffdf4426fc1761bb2feb4b44c9eb3bec3aacaa6b220165bda202230c2f054f"
+      url "https://github.com/krystxf/worktree-workflow/releases/download/v0.2.5-alpha/worktree-workflow_linux_arm64.tar.gz"
+      sha256 "9dfbf78b1afb176470d22eb1fb13e5deebf37f76c5ee192ebb79c914166b3449"
       define_method(:install) do
         bin.install "wtw"
       end
